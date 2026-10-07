@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Roblox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="profile-styles.css" />
+    <link rel="stylesheet" href="dashboard-styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">RBLX</div>
+        <nav class="menu">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="games.html">Games</a>
+          <a href="friends.html">Friends</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="profile-dropdown">
+            <button class="profile-btn" id="profileBtn">👤 Profile</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+              <a href="profile.html">My Profile</a>
+              <a href="settings.html">Settings</a>
+              <a href="help.html">Help</a>
+              <hr />
+              <a href="#" id="logoutBtn">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <div class="container">
+        <div class="dashboard-header">
+          <div>
+            <p class="eyebrow">Welcome back</p>
+            <h1 id="dashboardUser">Player</h1>
+          </div>
+          <button class="primary">Play Now</button>
+        </div>
+
+        <section class="dashboard-grid">
+          <div class="panel spotlight">
+            <p class="panel-label">Featured</p>
+            <h2>Obby Rush</h2>
+            <p>Jump, dodge, and survive the chaos.</p>
+            <button class="primary">Join Game</button>
+          </div>
+
+          <div class="panel stat-panel">
+            <p class="panel-label">Robux</p>
+            <h2 id="robuxBalanceCard">0</h2>
+            <p>Available balance</p>
+          </div>
+
+          <div class="panel stat-panel">
+            <p class="panel-label">Friends</p>
+            <h2 id="friendCountCard">0</h2>
+            <p>Online now</p>
+          </div>
+
+          <div class="panel stat-panel">
+            <p class="panel-label">Games</p>
+            <h2 id="gameCountCard">0</h2>
+            <p>Played this week</p>
+          </div>
+        </section>
+
+        <section class="list-section">
+          <div class="section-title">
+            <h2>Continue playing</h2>
+            <a href="games.html">View all</a>
+          </div>
+
+          <div class="mini-cards">
+            <article class="mini-card">
+              <div class="mini-thumb thumb-one"></div>
+              <div>
+                <h3>Adopt Me!</h3>
+                <p>Last played 2h ago</p>
+              </div>
+            </article>
+            <article class="mini-card">
+              <div class="mini-thumb thumb-two"></div>
+              <div>
+                <h3>Brookhaven</h3>
+                <p>Last played 1d ago</p>
+              </div>
+            </article>
+            <article class="mini-card">
+              <div class="mini-thumb thumb-three"></div>
+              <div>
+                <h3>Build A Boat</h3>
+                <p>Last played 3d ago</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="list-section alt">
+          <div class="section-title">
+            <h2>Recommended for you</h2>
+            <a href="games.html">Explore</a>
+          </div>
+
+          <div class="wide-list">
+            <div class="wide-item">
+              <div class="dot blue"></div>
+              <div>
+                <h3>Pet Simulator 99</h3>
+                <p>Collect and evolve pets</p>
+              </div>
+            </div>
+            <div class="wide-item">
+              <div class="dot teal"></div>
+              <div>
+                <h3>Tycoon Simulator</h3>
+                <p>Build your empire</p>
+              </div>
+            </div>
+            <div class="wide-item">
+              <div class="dot purple"></div>
+              <div>
+                <h3>Theme Park Tycoon</h3>
+                <p>Create your dream park</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="logo">RBLX</div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Support</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="dashboard-script.js"></script>
+  </body>
+</html>
