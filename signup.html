@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Roblox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login-styles.css" />
+  </head>
+  <body class="login-page">
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">RBLX</div>
+        <div class="nav-actions">
+          <button class="ghost">Help</button>
+          <a href="index.html" class="primary">Back Home</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="login-container">
+      <div class="login-box">
+        <div class="login-header">
+          <div class="login-logo">R</div>
+          <h1>Create Account</h1>
+          <p>Join millions of players</p>
+        </div>
+
+        <form class="login-form" id="signupForm">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="newUsername">Username</label>
+            <input
+              type="text"
+              id="newUsername"
+              name="username"
+              placeholder="Choose a username"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+            <span class="hint-msg">3-20 characters</span>
+            <span class="error-msg" id="newUsernameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="newPassword">Password</label>
+            <div class="password-container">
+              <input
+                type="password"
+                id="newPassword"
+                name="password"
+                placeholder="Create a strong password"
+                minlength="8"
+                required
+              />
+              <button type="button" class="toggle-password" id="toggleNewPassword">
+                👁️
+              </button>
+            </div>
+            <span class="hint-msg">At least 8 characters</span>
+            <span class="error-msg" id="newPasswordError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="password-container">
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm your password"
+                required
+              />
+              <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                👁️
+              </button>
+            </div>
+            <span class="error-msg" id="confirmPasswordError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="birthdate">Date of Birth</label>
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              required
+            />
+            <span class="error-msg" id="birthdateError"></span>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" name="terms" required />
+            <span>I agree to the Terms of Service and Privacy Policy</span>
+          </label>
+
+          <button type="submit" class="primary big login-btn">Create Account</button>
+
+          <div class="login-divider">or</div>
+
+          <button type="button" class="social-btn google-btn">
+            <span>🔵</span> Sign up with Google
+          </button>
+          <button type="button" class="social-btn facebook-btn">
+            <span>f</span> Sign up with Facebook
+          </button>
+        </form>
+
+        <div class="login-footer">
+          <p>Already have an account?</p>
+          <a href="login.html" class="signup-link">Log in here</a>
+        </div>
+
+        <div class="security-info">
+          <p>🔒 Your data is encrypted and secure</p>
+        </div>
+      </div>
+
+      <div class="login-side">
+        <div class="side-card">
+          <h3>Customize your avatar</h3>
+          <p>Express yourself with millions of items</p>
+        </div>
+        <div class="side-card">
+          <h3>Build & create</h3>
+          <p>Make games and share them with the world</p>
+        </div>
+        <div class="side-card">
+          <h3>Play together</h3>
+          <p>Connect with friends and explore worlds</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="signup-script.js"></script>
+  </body>
+</html>
